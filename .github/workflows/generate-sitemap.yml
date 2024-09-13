@@ -1,0 +1,35 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main  # or your default branch name
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    
+    - name: Install dependencies
+      run: |
+        python3 -m pip3 install --upgrade pip
+        pip3 install -r requirements.txt
+    
+    - name: Generate sitemap
+      run: python3 generate_sitemap.py
+    
+    - name: Display sitemap contents
+      run: cat sitemap.xml
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add sitemap.xml
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update sitemap" && git push)

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.bio-hackers.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://www.bio-hackers.com/CMS/OMAD_article.html</loc>
+  </url>
+  <url>
+    <loc>https://www.bio-hackers.com/blog_template.html</loc>
+  </url>
+</urlset>
+
+<!-- Note: This sitemap will not automatically update when new folders and pages are created. 
+     You'll need to manually add new URLs or implement a dynamic sitemap generation process. 
+     Consider using a server-side script or a sitemap generator tool to automatically 
+     update the sitemap as your site structure changes. -->
+
+
