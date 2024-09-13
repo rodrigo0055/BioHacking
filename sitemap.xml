@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.bio-hackers.com/index.html</loc>
   </url>
   <url>
+    <loc>https://www.bio-hackers.com/blog_template.html</loc>
+  </url>
+  <url>
     <loc>https://www.bio-hackers.com/CMS/OMAD_article.html</loc>
   </url>
   <url>
-    <loc>https://www.bio-hackers.com/blog_template.html</loc>
+    <loc>https://www.bio-hackers.com/CMS/Grounding.html</loc>
   </url>
 </urlset>
-
-
-
-
